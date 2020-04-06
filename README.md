@@ -5,7 +5,7 @@ Faz a formatação das flags de desconto na loja VTEX removendo número quebrado
 # Adicionar o controle na sua prateleira
 Adicione o código na prateleira da sua loja para exibição da flag. 
 
-Controle: $product.ListPriceMinusBestPriceInPercent 
+Controle: $product.ListPriceMinusBestPriceInPercent  (Highlight vtex)
 (Mostra a diferença (em porcentagem) do preço “De” para o melhor preço do produto.)
 
 Exemplo:
