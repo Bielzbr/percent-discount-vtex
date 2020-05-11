@@ -28,9 +28,15 @@ Ex: Desconto de 40.55% OFF ficaria 40% OFF.
       
         // Passa o valor para um número inteiro (Ex: 30.3333 => 30)
         var desconto = parseInt($(this).text());
-    
-        // Adiciona o novo desconto formatado no lugar
-        $(this).text(desconto + '% OFF');
+	
+	
+	if(desconto == 0){ 
+	    $(this).hide();
+	}else{
+	     // Adiciona o novo desconto formatado no lugar
+	    $(this).text(desconto + '% OFF');
+	}
+
       }
     });
   }
