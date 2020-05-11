@@ -15,11 +15,15 @@
         // Pega as class indicada por você na hora da inserção do controller da VTEX na prateleira
         $(".discount").each(function () {
 
-        // Passa o valor para um número inteiro (Ex: 30.3333 => 30)
-        var desconto = parseInt($(this).text());
+          // Passa o valor para um número inteiro (Ex: 30.3333 => 30)
+          var desconto = parseInt($(this).text());
     
-        // Adiciona o novo desconto formatado no lugar
-        $(this).text(desconto + '% OFF');
+         if(desconto == 0){ 
+              $(this).hide();
+          }else{
+               // Adiciona o novo desconto formatado no lugar
+              $(this).text(desconto + '% OFF');
+          }
       }
     });
   }
