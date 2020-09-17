@@ -27,7 +27,10 @@
       }
     });
   }
-
-  formatDesconto();
+  
+  //Aplica a função assim que finalizar de carregar as vitrines via AJAX da VTEX
+  $(document).ajaxStop(function () {
+      formatDesconto();
+  });
 //]]>
 </script>
