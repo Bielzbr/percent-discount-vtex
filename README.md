@@ -42,7 +42,9 @@ Ex: Desconto de 40.55% OFF ficaria 40% OFF.
 	}
   }
 
-  formatDesconto();
+  $(document).ajaxStop(function () {
+      formatDesconto();
+  });
 //]]>
 ```
 
