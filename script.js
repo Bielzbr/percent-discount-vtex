@@ -24,9 +24,10 @@
                // Adiciona o novo desconto formatado no lugar
               $(this).text(desconto + '% OFF');
           }
-      }
-    });
-  }
+      }); //End each
+      }//end check length
+  
+  }//end function
   
   //Aplica a função assim que finalizar de carregar as vitrines via AJAX da VTEX
   $(document).ajaxStop(function () {
